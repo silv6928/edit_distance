@@ -19,8 +19,3 @@ def distance(b, a):
             else:
                 d[i][j] = min(d[i-1][j] + 1, d[i][j-1] + 1, d[i-1][j-1] + 1)
     return d[-1][-1]
-
-a = 'dog'
-b = 'doggie'
-count = distance(b, a)
-print(count)
